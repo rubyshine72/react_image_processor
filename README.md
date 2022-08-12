@@ -1,4 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -12,11 +11,6 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
@@ -32,7 +26,7 @@ Please reference this article [How to Upload Files to AWS S3 in React](https://j
 
 
 ## Database
-Sqlite is used for dev environment.
+Sqlite is used for the dev environment.
 
 Please run the following command for migrate sqlite database.
 ```
@@ -40,3 +34,7 @@ npx prisma migrate dev
 ```
 
 This command will generate a sqlite db file. ```prisma/dev.db```
+
+
+## Postman
+You can test APIs using Postman tool, you need to just import ```postman_collection.json``` file on the Postmant tool.

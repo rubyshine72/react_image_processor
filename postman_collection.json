@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "d44bdee4-80dc-45d8-a087-47a8ba90bd1f",
+		"name": "ReactImageCompressor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getImages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/images?count=2&skip=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"images"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "2",
+							"description": "Count of images to get"
+						},
+						{
+							"key": "skip",
+							"value": "0",
+							"description": "Count of images to skip"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getImageById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/images/cl6quy1ob0000o0uoqgp0t2ug",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"images",
+						"cl6quy1ob0000o0uoqgp0t2ug"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteImageById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/images/cl6qv27hb0016o0uosyakvpj9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"images",
+						"cl6qv27hb0016o0uosyakvpj9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveImageInformation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"originalImageUrl\": \"https://lucasthotpersonalbucket.s3.process.env.NEXT_PUBLIC_S3_REGION.amazonaws.com/media/a39fe76f-4a41-42e0-8b4b-2bbb50cd1c63/original_romantic-couple-wallpapers-for-facebook-timeline-images-19-1.jpg\",\r\n\t\"originalImageName\": \"romantic-couple-wallpapers-for-facebook-timeline-images-19-1.jpg\",\r\n\t\"originalImageType\": \"image/jpeg\",\r\n\t\"originalImageSize\": 43718,\r\n\t\"originalImageWidth\": 720,\r\n\t\"originalImageHeight\": 267,\r\n\t\"compressedImageUrl\": \"https://lucasthotpersonalbucket.s3.process.env.NEXT_PUBLIC_S3_REGION.amazonaws.com/media/a39fe76f-4a41-42e0-8b4b-2bbb50cd1c63/romantic-couple-wallpapers-for-facebook-timeline-images-19-1.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"images"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
